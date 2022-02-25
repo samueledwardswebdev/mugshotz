@@ -1,0 +1,92 @@
+.navbar-links {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+}
+
+.navbar-cta {
+  display: none;
+}
+
+#showcase > img {
+  width: 90%;
+}
+
+#showcase .blue-dots {
+  left: -40%;
+}
+
+#showcase .banner-dots {
+  right: 0;
+  left: 50%;
+}
+
+.showcase-container h1 {
+  font-size: 4rem;
+}
+
+.showcase-container h2 {
+  font-size: 1rem;
+}
+
+.showcase-btns {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.showcase-btns .btn {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.about-container {
+  flex-direction: column;
+}
+
+.about-content {
+  width: 100%;
+  text-align: center;
+}
+
+.about-img { 
+  width: 100%;
+  height: 100%;
+}
+
+#about > img {
+  width: 200%;
+}
+
+.how-it-works-content {
+  width: 100%;
+}
+
+.how-it-works-content h3 {
+  font-size: 3rem;
+}
+
+.how-it-works-img {
+  width: 100%;
+}
+
+.mug-gallery-grid {
+  grid-template-columns: repeat(1,1fr);
+}
+
+form {
+  width: 100%;
+}
+
+
+.footer-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-container > div {
+  margin-bottom: 2rem;
+}

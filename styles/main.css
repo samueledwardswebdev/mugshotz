@@ -1,0 +1,429 @@
+/* RedRock Font Import */
+@font-face {
+  font-family: redRock;
+  src: url(/fonts/RedRock.ttf);
+}
+
+/* Makasik Font Import */
+@font-face {
+  font-family: makasih;
+  src: url(/fonts/Makasih.ttf);
+}
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: redrock;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-family: makasih;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  letter-spacing: 1.3px;
+  border: none;
+  background: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.274);
+}
+
+.btn-primary {
+  background: rgba(240,85,82);
+  color: #f4f4f4;
+  transition: 0.5s;
+  border: 4px solid rgba(240,85,82);
+}
+
+.btn-outline {
+  color: rgba(240,85,82);
+  transition: 0.5s;
+  border: 4px solid rgba(240,85,82);
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  transform: translateY(-0.5rem);
+}
+
+.current {
+  border-bottom: 4px rgba(240,85,82) solid;
+}
+
+/* Navigation Bar Styles */
+
+#navbar {
+  height: 10vh;
+  width: 100%;
+}
+
+.navbar-container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.navbar-container .navbar-brand p {
+  font-family: makasih;
+  font-size: 0.5rem;
+  color: rgba(240,85,72);
+}
+
+.navbar-container .mainMenu {
+  display: flex;
+}
+
+.mainMenu li a {
+  margin: 0 1rem;
+  color: #333;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  transition: 0.5s;
+  letter-spacing: 1.5px;
+}
+
+.mainMenu li a:hover {
+  border-bottom: 4px solid #24C1EB;
+}
+
+/* Showcase Styles */
+
+#showcase {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#showcase > img {
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+}
+
+#showcase .blue-dots {
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+#showcase .banner-dots {
+  bottom: 0; 
+  left: 0;
+  opacity: 0.7;
+
+}
+
+
+.showcase-container {
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.showcase-title,
+.showcase-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.showcase-container h1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+}
+
+.showcase-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: makasih;
+  color: rgba(240,85,82);
+  letter-spacing: 5px;
+}
+
+.showcase-img img{
+  width: 150%;
+  transform: translateX(-10%);
+}
+
+.showcase-btns .btn{
+  margin: 1rem 0.5rem;
+}
+
+/* About Section */
+
+#about {
+  position: relative;
+}
+
+#about > img { 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  width: 80%;
+}
+
+.about-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-img {
+  width: 50%;
+  height: 70vh;
+}
+
+.about-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+/* How It Works Section */
+
+#how-it-works {
+  padding: 3rem 0;
+  position: relative;
+}
+
+#how-it-works .yellow-dots{
+  position: absolute;
+  z-index: -1;
+  width: 80%;
+  opacity: 0.2;
+  bottom: -80%;
+}
+
+.how-it-works-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.how-it-works-content {
+  width: 50%;
+  height: 100%;
+}
+
+.how-it-works-img {
+  width: 50%;
+}
+
+.how-it-works-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works-content h4 {
+  font-size: 0.9rem;
+  color: rgba(240,85,82);
+  margin-bottom: 1rem;
+}
+
+.how-it-works-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.how-it-works-content .btn {
+  margin-top: 1rem;
+}
+
+/* Mug Gallery */
+
+#mug-gallery {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.mug-gallery-container {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.mug-gallery-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.25);
+}
+
+
+.gallery-item h2 {
+  font-size: 3rem;
+}
+
+/* Contect Section */
+
+#contact {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.contact-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 60%;
+}
+
+.form-item {
+  width: 100%;
+}
+
+.form-item label {
+  margin: 0.5rem 0;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border: none;
+}
+
+.form-item textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  resize: vertical;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+form button {
+  cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+  background: #333;
+  color: #f4f4f4;
+  padding: 3rem 0;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container > div h5 {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+
+.footer-container > div a {
+  text-decoration: none;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.footer-container > div p {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
